@@ -45,7 +45,7 @@ const AudioToText: React.FC = () => {
 
   const connect = () => {
     connection?.disconnect();
-    const socket = io.connect("https://google-speech-text-73a2xgpwn-ak542829gmailcoms-projects.vercel.app/:8081");
+    const socket = io.connect("https://google-speech-text-kp2posj3l-ak542829gmailcoms-projects.vercel.app/:8081");
     socket.on("connect", () => {
       console.log("connected", socket.id);
       setConnection(socket);
